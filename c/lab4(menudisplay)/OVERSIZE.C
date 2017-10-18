@@ -1,0 +1,25 @@
+/** LAB4.1 Program that takes char by char from the user until he presses
+		   ENTER or size is over **/
+#include<stdio.h>
+#define MAX 10
+#define Enter 13
+
+void main (void){
+	char name [MAX];
+	char x;
+	int i;
+	clrscr();
+	printf("Enter the name: ");
+	for(i = 0; i < MAX-1; i++){
+		name[i] = getche();
+		if(name[i] == Enter){
+			clrscr();
+			printf("ENTER PRESSED");
+			break;
+		}
+	}
+	name[i]='\0';
+	printf("\nname is: ");
+	puts(name);
+	getch();
+}

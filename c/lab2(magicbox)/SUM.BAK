@@ -1,0 +1,17 @@
+/** Program that always asks the user for input and add to previous
+	until it reachs 100! **/
+#include<stdio.h>
+#include<conio.h>
+void main (void){
+	int x;
+	int sum = 0;
+	clrscr();
+	printf("enter the number: ");
+	do{
+	scanf("%d", &x);
+	sum = sum + x;
+	printf("your sum is : %d\n", sum);
+	}while(sum<100);
+	printf("You Have Exceeded 100 !");
+	getch();
+}

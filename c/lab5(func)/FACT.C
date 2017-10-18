@@ -1,0 +1,18 @@
+/******** Making a Recursive Function to calculate factorial *******/
+#include <stdio.h>
+
+int fact (int N);
+
+void main (void){
+	int x;
+	clrscr();
+	printf("Kindly enter the number: ");
+	scanf("%d",&x);
+	printf("%d", fact(x));
+	getch();
+}
+
+int fact (int N){
+	if (N == 1)	return 1;
+	return (N * fact(N-1));
+}
